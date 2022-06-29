@@ -1,0 +1,122 @@
+:root{
+    --black-clr:rgba(0,0,0,.87);
+    --icon-clr:rgba(241, 243, 244, 1);
+    --h1-font: 118.7px;
+    --h2-font: 83.9px;
+    --h3-font: 59.4px;
+    --h4-font: 42px;
+    --h5-font: 29.7px;
+    --h6-font: 16px;
+    --p-font: 21px;
+}
+
+.mainBodyContainer{
+    background-color: white;
+    min-height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer{
+    background-color: white;
+}
+.mainContainer img{
+    width: 550px;
+}
+
+@media  screen and (max-width:600px) {
+    .mainContainer img{
+    width: 300px;
+    }
+    
+}
+
+@media  screen and (max-width:300px) {
+    .mainContainer img{
+    width: 200px;
+    }
+    
+}
+
+/* tech stack */
+.techStackContainer{
+    background-color: aqua;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.techStackHeader p{
+    /* background-color: bisque; */
+    font-size: var(--h6-font);
+    color:var(--black-clr);
+    font-weight: 400;
+    border-bottom:2px solid red;
+    
+}
+
+.techStackImage{
+    background-color: white;
+    max-width:600px;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.techStackcicle{
+    background-color: var(--icon-clr);
+    width:50px;
+    height: 50px;
+    border-radius: 50px;
+    margin:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit:contain;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+
+.techStackcicle img{
+    /* background-color: var(--icon-clr); */
+    width:25px;
+    height: 25px;
+    /* border-radius: 50px; */
+    /* margin:1rem; */
+}
+
+.techStackcicle:hover{
+    transform: scale(1.2);
+    transition: all .5s ease-in-out;
+    box-shadow: 0px 0px 18px #BFBFFF;
+}
+
+@media  screen and (max-width:600px) {
+    .techStackcicle{
+        width:40px;
+        height: 40px;
+    }
+
+    .techStackcicle img{
+        width:22px;
+        height: 22px;
+    }
+    
+}
+
+@media  screen and (max-width:300px) {
+    .techStackcicle{
+        width:35px;
+        height: 35px;
+    }
+
+    .techStackcicle img{
+        width:20px;
+        height: 20px;
+    }
+    
+}
+/* end of tech stack */
