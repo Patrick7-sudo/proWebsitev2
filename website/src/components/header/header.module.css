@@ -9,6 +9,17 @@
     --h5-font: 29.7px;
     --h6-font: 16px;
     --p-font: 21px;
+    --burger-menu-width: 35px;
+    --burger-menu-height:5px;
+    --burger-menu-margin:.8rem;
+}
+
+@media screen and (max-width:400px){
+    :root{
+        --burger-menu-width: 20px;
+        --burger-menu-height:3px;
+        --burger-menu-margin:.5rem;
+    }
 }
 
 .mainHeaderComponents{
@@ -123,20 +134,20 @@
 
 .togglelineCloseRight{
     position: absolute;
-    width:80%;
-    height:6px;
-    margin:1rem;
+    width:var(--burger-menu-width);
+    height:var(--burger-menu-height);
+    margin:var(--burger-menu-margin);
     background-color: var(--black-clr);
     border-radius:50px;
     transition: all 1s ease-in-out;
-    bottom:22px;
+    bottom:23px;
 }
 
 .togglelineCloseCenter{
     position: absolute;
-    width:80%;
-    height:6px;
-    margin:1rem;
+    width:var(--burger-menu-width);
+    height:var(--burger-menu-height);
+    margin:var(--burger-menu-margin);
     background-color: var(--black-clr);
     border-radius:50px;
     transition: all 1s ease-in-out;
@@ -145,19 +156,19 @@
 
 .togglelineCloseLeft{
     position: absolute;
-    width:80%;
-    height:6px;
-    margin:1rem;
+    width:var(--burger-menu-width);
+    height:var(--burger-menu-height);
+    margin:var(--burger-menu-margin);
     background-color: var(--black-clr);
     border-radius:50px;
     transition: all 1s ease-in-out;
-    top:22px;
+    top:23px;
 }
 
 .togglelineOpenRight{
     position: absolute;
-    width:80%;
-    height:6px;
+    width:var(--burger-menu-width);
+    height:var(--burger-menu-height);
     /* margin:3px; */
     background-color: var(--black-clr);
     border-radius:50px;
@@ -168,8 +179,8 @@
 
 .togglelineOpenLeft{
     position: absolute;
-    width:80%;
-    height:6px;
+    width:var(--burger-menu-width);
+    height:var(--burger-menu-height);
     /* margin:3px; */
     background-color: var(--black-clr);
     border-radius:50px;
@@ -180,8 +191,8 @@
 
 .togglelineOpenCenter{
     position: absolute;
-    width:80%;
-    height:6px;
+    width:var(--burger-menu-width);
+    height:var(--burger-menu-height);
     /* margin:3px; */
     background-color: var(--black-clr);
     border-radius:50px;
@@ -192,6 +203,7 @@
 }
 
 /* end of hamburger menu icon  */
+/* responsivenss small screen width for burger menu length */
 /* hidding hamburger menu */
 @media screen and (min-width:600px){
     .toggleHolder{
