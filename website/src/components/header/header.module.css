@@ -28,8 +28,8 @@
     justify-content: center;
     align-items: center; 
     background-color: pink;
-    height: auto;
-    
+    height: auto;  
+    padding:.5rem;
 }
 .contactBoxHolder{
     background-color: blue;
@@ -118,7 +118,7 @@
     position:relative;
     margin:.3rem;
     overflow: hidden;
-    padding:.5rem;
+    
 }
 
 .togglelineCloseRight{
