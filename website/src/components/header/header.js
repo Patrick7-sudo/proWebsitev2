@@ -1,15 +1,15 @@
 import style from "./header.module.css"
-import { appDataTransfer } from "../../App";
-import {useContext,useState,useEffect} from "react";
+// import { appDataTransfer } from "../../App";
+import {useState,useEffect} from "react";
 import profilePic from "../../ProfilePic.png"
 
 function Header(){
-    const data = useContext(appDataTransfer);
+    // const data = useContext(appDataTransfer);
 
 
-    const [width,setWidth]= useState(1000);
+    const [width,setWidth]= useState("");
     const [toggleburgermenu, setToggleburgermenu] =useState(true);
-
+    console.log(width)
     function togglingBurgerMenu(){
         if(toggleburgermenu){
             setToggleburgermenu(false)
@@ -18,9 +18,21 @@ function Header(){
         }
     }
 
-    useEffect(()=>{
-        setWidth(data.width)
-    },[data])
+    // useEffect(()=>{
+    //     setWidth(data.width)
+
+        
+    // },[data])
+
+    useEffect(() => {
+      function changeWidth() {
+        setWidth(window.innerWidth);
+      }
+
+      window.addEventListener("resize", changeWidth);
+
+      changeWidth();
+    }, [width]);
 
     useEffect(()=>{
         if(width>600){
@@ -32,7 +44,7 @@ function Header(){
     return (
       <div
         className={style.mainHeaderComponents}
-        style={{ width: `${width}px` }}
+        style={{ width: `${width}px`}}
       >
         {/* menu section for social media */}
         <div className={style.menuBarHolder}>
