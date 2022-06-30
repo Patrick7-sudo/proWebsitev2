@@ -1,7 +1,7 @@
 
 import Header from './components/header/header.js';
 import Body from './components/body/body.js';
-import './App.css';
+import style from './App.module.css';
 import React,{useState, useEffect} from 'react';
 
 export const appDataTransfer= React.createContext()
@@ -31,10 +31,17 @@ function App() {
   },[height])
 
   return (
-    <appDataTransfer.Provider value={{width,height}}>
-      <div className="App" style={{width:`${width}px`,height:`${height}px`}}>
-        <Header />
-        <Body />
+    <appDataTransfer.Provider value={{ width, height }}>
+      <div
+        className={style.app}
+        style={{ width: `${width}px`, height: `${height}px` }}
+      >
+        <div className={style.headerPosition}>
+          <Header />
+        </div>
+        <div className={style.bodyPosition}>
+          <Body />
+        </div>
       </div>
     </appDataTransfer.Provider>
   );

@@ -2,10 +2,22 @@ import style from "./body.module.css"
 import{useState, useEffect} from "react"
 import profile from "../../logo1.svg"
 import {techStack} from "../../techstake.js"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {  faCoffee, faSearch} from "@fortawesome/fontawesome-free-solid";
 
 function Body(){
 
     const [width, setWidth]=useState("");
+    const [toggle, setToggle] =useState(false);
+
+    function toggling(){
+        if(toggle){
+            setToggle(false)
+        }else{
+            setToggle(true)
+        }
+        console.log(toggle)
+    }
     
     useEffect(()=>{
         function dynamicWidth(){
@@ -21,17 +33,30 @@ function Body(){
         <div className={style.mainContainer}>
           <img src={profile} alt="logo"></img>
 
-          <div className={style.inputField}>
-            <h1>input field</h1>
+          <div className={style.inputField} onClick={()=>toggling()}>
+            <div className={style.inputfieldContainer}>
+              <div className={style.inputfieldItem}>
+                <FontAwesomeIcon icon={faSearch} className={style.faIconStyle}/>
+                <p>Get to Know Me</p>
+              </div>
+              {toggle? 
+              <div className={style.optionsHolder} 
+              >
+                <a href="/">About Me</a>
+                <a href="/">Projects</a>
+              </div>:null}
+              
+            </div>
           </div>
 
+          {/* tech-stack logo */}
           <div className={style.techStackContainer}>
             <div className={style.techStackHeader}>
-              <p>Current Tech-Stack</p>
+              <p>Current Tech-Tools</p>
             </div>
-            <div className={style.techStackImage}>
-            {techStack.map((input,index)=>{
 
+            <div className={style.techStackImage}>
+              {techStack.map((input, index) => {
                 return (
                   <div className={style.techStackcicle} key={index}>
                     <a href={input.address} target="_blank" rel="noreferrer">
@@ -39,12 +64,10 @@ function Body(){
                     </a>
                   </div>
                 );
-                
-                })  
-
-            }
+              })}
             </div>
           </div>
+          {/* end of tech-stack logo */}
         </div>
       </div>
     );

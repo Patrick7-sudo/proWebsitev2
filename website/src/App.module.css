@@ -1,0 +1,14 @@
+.app{
+  text-align: center;
+}
+
+.headerPosition{
+  position: relative;
+  z-index:300;
+  /* height: 8%; */
+}
+.bodyPosition{
+  position: relative;
+  z-index: 0;
+  height:90% ;
+}
