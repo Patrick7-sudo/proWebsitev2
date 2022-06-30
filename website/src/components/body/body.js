@@ -3,12 +3,13 @@ import{useState, useEffect} from "react"
 import profile from "../../logo1.svg"
 import {techStack} from "../../techstake.js"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {  faCoffee, faSearch} from "@fortawesome/fontawesome-free-solid";
+import { faSearch} from "@fortawesome/fontawesome-free-solid";
 
 function Body(){
 
     const [width, setWidth]=useState("");
     const [toggle, setToggle] =useState(false);
+   
 
     function toggling(){
         if(toggle){
@@ -17,6 +18,12 @@ function Body(){
             setToggle(true)
         }
         console.log(toggle)
+    }
+    
+    function outsideToggling(){
+        if(toggle){
+            setToggle(false)
+        }
     }
     
     useEffect(()=>{
@@ -29,7 +36,7 @@ function Body(){
     },[width]);
 
     return (
-      <div className={style.mainBodyContainer} style={{ width: `${width}px` }}>
+      <div className={style.mainBodyContainer} style={{ width: `${width}px` }} onClick={()=>{outsideToggling()}}>
         <div className={style.mainContainer}>
           <img src={profile} alt="logo"></img>
 

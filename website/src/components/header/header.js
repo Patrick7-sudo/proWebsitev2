@@ -4,7 +4,6 @@ import {useState,useEffect} from "react";
 import profilePic from "../../ProfilePic.png"
 
 function Header(){
-    // const data = useContext(appDataTransfer);
 
 
     const [width,setWidth]= useState("");

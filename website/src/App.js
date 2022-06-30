@@ -31,7 +31,7 @@ function App() {
   },[height])
 
   return (
-    <appDataTransfer.Provider value={{ width, height }}>
+    <appDataTransfer.Provider value={{ width, height}}>
       <div
         className={style.app}
         style={{ width: `${width}px`, height: `${height}px` }}
