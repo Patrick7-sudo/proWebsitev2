@@ -15,10 +15,10 @@
 
 @media screen and (max-width: 600px) {
   :root {
-    --profilePicOuter-width: 36px;
-    --profilePicOuter-height: 36px;
-    --profilePicInner-width: 32px;
-    --profilePicInner-height: 32px;
+    --profilePicOuter-width: 50px;
+    --profilePicOuter-height: 50px;
+    --profilePicInner-width: 46px;
+    --profilePicInner-height: 46px;
   }
 }
 
@@ -232,25 +232,32 @@
 
 /* End of menu for profile picture */
 @media screen and (max-width: 600px) {
-  .headerContainerRight{
-    min-width: 15%;
-    max-width: 15%;
+  .headerContainer{
+    flex-direction: column;
   }
-  .headerContainerLeft {
+  .headerContainerBottom{
+    min-width: 100%;
+    max-width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerContainerTop {
     /* background-color: yellow; */
-    min-width: 85%;
-    max-width: 85%;
+    min-width: 100%;
+    max-width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .logoContainer {
     /* background-color: brown; */
-    min-width: 90%;
-    max-width: 90%;
+    min-width: 60%;
+    max-width: 60%;
     height: 100%;
   }
   .optionsContainer {

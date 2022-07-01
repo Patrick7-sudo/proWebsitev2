@@ -2,14 +2,14 @@ import style from "./headerMain.module.css";
 import profilePic from "../../ProfilePic.png";
 import profile from "../../logo1.svg";
 import { Link } from "react-router-dom";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/fontawesome-free-solid";
 
 function HeaderMain({pageName}){
 
      const [toggle, setToggle] = useState(false);
-     
+     const [width, setWidth] = useState("");
 
      function toggling() {
        if (toggle) {
@@ -26,78 +26,167 @@ function HeaderMain({pageName}){
        }
      }
 
+     useEffect(() => {
+       function changeWidth() {
+         setWidth(window.innerWidth);
+       }
+
+       window.addEventListener("resize", changeWidth);
+
+       changeWidth();
+     }, [width]);
+
     return (
       <div className={style.headerContainer}>
-        {/* right container */}
-        <div className={style.headerContainerLeft}>
-          {/* logo container */}
-          <div className={style.logoContainer}>
-            <Link to="/" className={style.linkLogoContainer}>
-              <img src={profile} alt="logo"></img>
-            </Link>
-          </div>
-          {/* End of logo container */}
+        {/* left container */}
+        {width > 600 ? (
+          <>
+            {/* only when screen size more than 600px  */}
+            <div className={style.headerContainerLeft}>
+              {/* logo container */}
+              <div className={style.logoContainer}>
+                <Link to="/" className={style.linkLogoContainer}>
+                  <img src={profile} alt="logo"></img>
+                </Link>
+              </div>
+              {/* End of logo container */}
 
-          {/* placeHolder and social media container */}
-          <div className={style.optionsContainer}>
-            <div
-              className={style.optionsBoxContainer}
-              onMouseLeave={() => mouseOut()}
-            >
-              <div className={style.inputField} onClick={() => toggling()}>
-                <div className={style.inputfieldContainer}>
-                  <div className={style.inputfieldItem}>
-                    <FontAwesomeIcon
-                      icon={faSearch}
-                      className={style.faIconStyle}
-                    />
-                    <p>{pageName}</p>
-                  </div>
-                  {toggle ? (
-                    <div className={style.optionsHolder}>
-                      <Link to="/aboutmepage">About Me</Link>
+              {/* placeHolder and social media container */}
+              <div className={style.optionsContainer}>
+                <div
+                  className={style.optionsBoxContainer}
+                  onMouseLeave={() => mouseOut()}
+                >
+                  <div className={style.inputField} onClick={() => toggling()}>
+                    <div className={style.inputfieldContainer}>
+                      <div className={style.inputfieldItem}>
+                        <FontAwesomeIcon
+                          icon={faSearch}
+                          className={style.faIconStyle}
+                        />
+                        <p>{pageName}</p>
+                      </div>
+                      {toggle ? (
+                        <div className={style.optionsHolder}>
+                          <Link to="/aboutmepage">About Me</Link>
 
-                      <Link to="/projectspage">Projects</Link>
+                          <Link to="/projectspage">Projects</Link>
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
+                  </div>
+                </div>
+
+                <div className={style.socialMediaContainer}>
+                  <a
+                    href="https://www.linkedin.com/in/tasniim-bari-3b25001aa/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    linkedin
+                  </a>
+
+                  <a
+                    href="https://github.com/tasniimbari"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Github
+                  </a>
                 </div>
               </div>
+              {/* end of placeHolder and social media container */}
             </div>
-
-            <div className={style.socialMediaContainer}>
-              <a
-                href="https://www.linkedin.com/in/tasniim-bari-3b25001aa/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                linkedin
-              </a>
-
-              <a
-                href="https://github.com/tasniimbari"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-          {/* end of placeHolder and social media container */}
-        </div>
-        {/* end of right container */}
-        {/* left container */}
-        <div className={style.headerContainerRight}>
-          {/* profilePicHolder */}
-          <div className={style.profilePicHolder}>
-            <div className={style.profilePicCircleOuter}>
-              <div className={style.profilePicCircleInner}>
-                <img src={profilePic} alt="profile" />
+            {/* end of left container */}
+            {/* right container */}
+            <div className={style.headerContainerRight}>
+              {/* profilePicHolder */}
+              <div className={style.profilePicHolder}>
+                <div className={style.profilePicCircleOuter}>
+                  <div className={style.profilePicCircleInner}>
+                    <img src={profilePic} alt="profile" />
+                  </div>
+                </div>
               </div>
+              {/* End of profilePicHolder */}
             </div>
-          </div>
-          {/* End of profilePicHolder */}
-        </div>
-        {/* end of left container */}
+            {/* end of right container */}
+          </>
+        ) : (
+          <>
+            {/* layout when its less than 600 */}
+            {/* only when screen size more than 600px  */}
+            <div className={style.headerContainerTop}>
+              {/* logo container */}
+              <div className={style.logoContainer}>
+                <Link to="/" className={style.linkLogoContainer}>
+                  <img src={profile} alt="logo"></img>
+                </Link>
+              </div>
+              {/* End of logo container */}
+
+              {/* profilePicHolder */}
+              <div className={style.profilePicHolder}>
+                <div className={style.profilePicCircleOuter}>
+                  <div className={style.profilePicCircleInner}>
+                    <img src={profilePic} alt="profile" />
+                  </div>
+                </div>
+              </div>
+              {/* End of profilePicHolder */}
+            </div>
+            {/* end of right container */}
+            {/* left container */}
+            <div className={style.headerContainerBottom}>
+              {/* placeHolder and social media container */}
+              <div className={style.optionsContainer}>
+                <div
+                  className={style.optionsBoxContainer}
+                  onMouseLeave={() => mouseOut()}
+                >
+                  <div className={style.inputField} onClick={() => toggling()}>
+                    <div className={style.inputfieldContainer}>
+                      <div className={style.inputfieldItem}>
+                        <FontAwesomeIcon
+                          icon={faSearch}
+                          className={style.faIconStyle}
+                        />
+                        <p>{pageName}</p>
+                      </div>
+                      {toggle ? (
+                        <div className={style.optionsHolder}>
+                          <Link to="/aboutmepage">About Me</Link>
+
+                          <Link to="/projectspage">Projects</Link>
+                        </div>
+                      ) : null}
+                    </div>
+                  </div>
+                </div>
+
+                <div className={style.socialMediaContainer}>
+                  <a
+                    href="https://www.linkedin.com/in/tasniim-bari-3b25001aa/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    linkedin
+                  </a>
+
+                  <a
+                    href="https://github.com/tasniimbari"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+              {/* end of placeHolder and social media container */}
+            </div>
+            {/* end of left container */}
+          </>
+        )}
       </div>
     );
 }
