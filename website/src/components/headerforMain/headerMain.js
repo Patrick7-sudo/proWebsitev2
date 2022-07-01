@@ -1,4 +1,3 @@
-import Header from "../header/header"
 import style from "./headerMain.module.css";
 import profilePic from "../../ProfilePic.png";
 import profile from "../../logo1.svg";
