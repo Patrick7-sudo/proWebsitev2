@@ -232,10 +232,14 @@
 
 /* End of menu for profile picture */
 @media screen and (max-width: 600px) {
+  .headerContainerRight{
+    min-width: 15%;
+    max-width: 15%;
+  }
   .headerContainerLeft {
     /* background-color: yellow; */
-    min-width: 90%;
-    max-width: 90%;
+    min-width: 85%;
+    max-width: 85%;
     height: 100%;
     display: flex;
     flex-direction: column;
