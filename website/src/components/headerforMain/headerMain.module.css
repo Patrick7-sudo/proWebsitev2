@@ -1,0 +1,284 @@
+:root {
+  --profilePicOuter-width: 46px;
+  --profilePicOuter-height: 46px;
+  --profilePicInner-width: 43px;
+  --profilePicInner-height: 43px;
+  --h1-font: 118.7px;
+  --h2-font: 83.9px;
+  --h3-font: 59.4px;
+  --h4-font: 42px;
+  --h5-font: 29.7px;
+  --h6-font: 16px;
+  --p-font: 21px;
+  --font-clr: #5f6368;
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --profilePicOuter-width: 36px;
+    --profilePicOuter-height: 36px;
+    --profilePicInner-width: 32px;
+    --profilePicInner-height: 32px;
+  }
+}
+
+.headerContainer {
+  background-color: white;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  display: flex;
+  border-bottom:1px solid var(--icon-clr);
+}
+.headerContainerLeft {
+  /* background-color: yellow; */
+  min-width: 90%;
+  max-width: 90%;
+  display: flex;
+  /* overflow: hidden; */
+}
+.headerContainerRight {
+  /* background-color: aquamarine; */
+  min-width: 10%;
+  max-width: 10%;
+}
+/* logo container */
+.logoContainer {
+  /* background-color: brown; */
+  min-width: 30%;
+  max-width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.linkLogoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+}
+.logoContainer img {
+  width: 90%;
+  /* background-color: aqua; */
+}
+/* end of logo container */
+/*  */
+
+/* optionsContainer */
+.optionsContainer {
+  min-width: 70%;
+  max-width: 70%;
+  /* background-color: orange; */
+  display: flex;
+  flex-direction: column;
+}
+.optionsBoxContainer {
+  min-width: 100%;
+  max-width: 100%;
+  height: 70%;
+  /* background-color: orangered; */
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+  position: relative;
+  z-index:2;
+}
+
+.socialMediaContainer {
+  min-width: 90%;
+  max-width: 90%;
+  height: 30%;
+  /* background-color: pink; */
+ position: relative;
+  z-index:0;
+}
+
+/* options holder */
+.inputField {
+  /* background-color: red; */
+  max-width: 80%;
+  min-width: 80%;
+  height: 60px;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.inputField p {
+  font-size: var(--h6-font);
+  color: rgb(118, 118, 118);
+}
+
+.inputfieldContainer {
+  border-radius: 25px;
+  background-color: white;
+  border: 1px solid var(--icon-clr);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0px 0px 20px -7px #BDBDBD; 
+  box-shadow: 0px 0px 20px -7px #BDBDBD;
+}
+
+.inputfieldItem {
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.inputfieldItem p {
+  margin-left: 3rem;
+  font-size: var(--h6-font);
+}
+
+.optionsHolder {
+  background-color: transparent;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 2rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.optionsHolder a {
+  font-size: var(--h6-font);
+  margin-top: 0px;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 0.3rem;
+  color: var(--black-clr);
+}
+
+.optionsHolder a:hover {
+  color: blue;
+}
+
+.faIconStyle {
+  color: red;
+  font-size: var(--h6-font);
+}
+/* end of options holder */
+
+/* social media container */
+/* .socialMediaContainer{
+  background-color: aqua;
+ 
+} */
+
+.socialMediaContainer a{
+  text-decoration: none;
+  margin-left:1rem;
+  color:var(--font-clr);
+}
+.socialMediaContainer a:hover{
+  color:blue;
+}
+/* end of social media container */
+/* End of optionsContainer */
+/* menu for profile picture */
+
+.profilePicHolder {
+  /* background-color: red; */
+  min-width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  min-height: 100%;
+}
+
+.profilePicCircleOuter {
+  width: var(--profilePicOuter-width);
+  height: var(--profilePicOuter-height);
+  /* background-color: white; */
+  border-radius: 50%;
+  /* overflow: hidden; */
+  background: linear-gradient(
+    45deg,
+    red 10%,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profilePicCircleInner {
+  width: var(--profilePicInner-width);
+  height: var(--profilePicInner-height);
+  background-color: white;
+  border-radius: 50%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.profilePicCircleInner img {
+  width: var(--profilePicInner-width);
+  min-height: 100%;
+}
+
+/* End of menu for profile picture */
+@media screen and (max-width: 600px) {
+  .headerContainerLeft {
+    /* background-color: yellow; */
+    min-width: 90%;
+    max-width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logoContainer {
+    /* background-color: brown; */
+    min-width: 90%;
+    max-width: 90%;
+    height: 100%;
+  }
+  .optionsContainer {
+    min-width: 90%;
+  }
+  .optionsBoxContainer {
+    min-width: 100%;
+    max-width: 100%;
+    /* height: 70%; */
+   
+    /* background-color: yellow; */
+  }
+
+  .inputField {
+    background-color: transparent;
+    /* max-width:100%; */
+    min-width: 100%;
+    height: 60px;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .headerContainerRight {
+    height: 80px;
+    margin-top: 1rem;
+  }
+  .profilePicHolder {
+    /* background-color: pink; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .socialMediaContainer{
+    margin-bottom:.5rem;
+  }
+}

@@ -41,7 +41,7 @@ export const techStack = [
     address: "https://getbootstrap.com/",
   },
   {
-    img: "https://www.payoda.com/wp-content/uploads/2021/05/1_mbP4Bjrs8Hshx7IgjsUNSg.jpeg",
+    img: "https://image.pngaaa.com/597/6267597-middle.png",
     alt: "rest",
     address: "https://www.ibm.com/cloud/learn/rest-apis",
   },
@@ -51,7 +51,7 @@ export const techStack = [
     address: "https://expressjs.com/en/guide/routing.html",
   },
   {
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrRwTkfJDlrB-NTf4r7Ez42QnKUPVBtewst4bW9Mu2GK5cRYwMO3VkbITLbG9TMaQJeQI&usqp=CAU",
+    img: "https://www.ictdemy.com/images/5728/nodejs_logo.png",
     alt: "node",
     address: "https://nodejs.org/en/",
   },
@@ -61,7 +61,7 @@ export const techStack = [
     address: "https://www.mysql.com/",
   },
   {
-    img: "https://res.cloudinary.com/hevo/image/upload/f_auto,q_auto/v1626694700/hevo-blog/MongoDB-sm-logo-500x400-1-1.gif",
+    img: "https://assets-global.website-files.com/6009f6f109d51e60b911ba53/60232c7fee9f278674db9c2c_9kib-354x415-unnamed-mongodb-logo-sv-11562860723mgempnmrq3.png",
     alt: "mongoDB",
     address: "https://www.mongodb.com/brand-resources",
   },

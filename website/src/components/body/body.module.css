@@ -30,7 +30,21 @@
     width: 550px;
 }
 
-@media  screen and (max-width:600px) {
+@media  screen and (min-width:120px) {
+    .mainContainer img{
+    width: 550px;
+    }
+    
+}
+
+@media  screen and (max-width:900px) {
+    .mainContainer img{
+    width: 400px;
+    }
+    
+}
+
+@media  screen and (max-width:700px) {
     .mainContainer img{
     width: 300px;
     }
@@ -181,6 +195,19 @@
     transform: scale(1.2);
     transition: all .5s ease-in-out;
     box-shadow: 0px 0px 18px whitesmoke;
+}
+
+@media  screen and (min-width:900px) {
+    .techStackcicle{
+        width:65px;
+        height: 65px;
+    }
+
+    .techStackcicle img{
+        width:45px;
+        height: 45px;
+    }
+    
 }
 
 @media  screen and (max-width:600px) {
