@@ -109,6 +109,7 @@
 .inputField p {
   font-size: var(--h6-font);
   color: rgb(118, 118, 118);
+  margin:.8rem;
 }
 
 .inputfieldContainer {
@@ -242,6 +243,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top:.5rem;
   }
   .headerContainerTop {
     /* background-color: yellow; */
@@ -278,6 +280,10 @@
     height: 60px;
     margin-top: 0.5rem;
     transition: all 0.3s ease-in-out;
+   
+  }
+  .inputField p{
+    margin:.6rem;
   }
 
   .headerContainerRight {
