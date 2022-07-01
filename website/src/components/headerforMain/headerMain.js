@@ -55,9 +55,9 @@ function HeaderMain({pageName}){
                   </div>
                   {toggle ? (
                     <div className={style.optionsHolder}>
-                      <Link to="/mainpage">About Me</Link>
+                      <Link to="/aboutmepage">About Me</Link>
 
-                      <a href="/">Projects</a>
+                      <Link to="/projectspage">Projects</Link>
                     </div>
                   ) : null}
                 </div>

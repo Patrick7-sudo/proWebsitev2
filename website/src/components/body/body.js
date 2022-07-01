@@ -56,9 +56,9 @@ function Body(){
               </div>
               {toggle ? (
                 <div className={style.optionsHolder}>
-                  <Link to="/mainpage" >About Me</Link>
+                  <Link to="/aboutmepage" >About Me</Link>
 
-                  <Link to="/mainpage">Projects</Link>
+                  <Link to="/projectspage">Projects</Link>
                 </div>
               ) : null}
             </div>

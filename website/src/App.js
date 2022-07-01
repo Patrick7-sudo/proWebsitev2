@@ -5,7 +5,8 @@
 import React,{useState, useEffect} from 'react';
 import { BrowserRouter,Route, Routes } from "react-router-dom";
 import WelcomePage from './components/combine.js';
-import Mainpage from './components/mainpage/mainpage.js';
+import Aboutmepage from './components/aboutmepage/aboutmepage.js';
+import Projectspage from './components/projectspage/projectspage.js';
 
 export const appDataTransfer= React.createContext()
 
@@ -50,7 +51,8 @@ function App() {
           </div> */}
         <Routes>
           <Route path="*" element={<WelcomePage />} />
-          <Route path="/mainpage" element={<Mainpage />} />
+          <Route path="/aboutmepage" element={<Aboutmepage />} />
+          <Route path="/projectspage" element={<Projectspage />} />
         </Routes>
       </appDataTransfer.Provider>
     </BrowserRouter>

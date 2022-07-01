@@ -13,7 +13,7 @@
   --font-clr: #5f6368;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   :root {
     --profilePicOuter-width: 36px;
     --profilePicOuter-height: 36px;
@@ -28,6 +28,7 @@
   max-width: 100%;
   min-height: 100px;
   display: flex;
+  margin-top:.5rem;
   border-bottom:1px solid var(--icon-clr);
 }
 .headerContainerLeft {
@@ -273,12 +274,20 @@
     margin-top: 1rem;
   }
   .profilePicHolder {
-    /* background-color: pink; */
+    background-color: transparent;
     align-items: center;
     justify-content: center;
   }
 
   .socialMediaContainer{
     margin-bottom:.5rem;
+  }
+}
+
+@media screen and (max-width:400px){
+  .profilePicHolder {
+    background-color: transparent;
+    align-items: flex-start;
+    justify-content: center;
   }
 }

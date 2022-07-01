@@ -1,8 +1,8 @@
 import HeaderMain from "../headerforMain/headerMain";
 import {useState,useEffect} from "react";
-import style from "./mainpage.module.css"
+import style from "./aboutmepage.module.css"
 
-function Mainpage(){
+function Aboutmepage(){
 const [width, setWidth] = useState("");
 const [height, setHeight] = useState("");
 
@@ -34,4 +34,4 @@ useEffect(() => {
     );
 }
 
-export default Mainpage;
+export default Aboutmepage;
