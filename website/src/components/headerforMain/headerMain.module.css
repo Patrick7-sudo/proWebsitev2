@@ -148,7 +148,10 @@
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
-
+.optionsHolderIndividual{
+  background-color: #5f6368;
+  min-width:100%;
+}
 .optionsHolder a {
   font-size: var(--h6-font);
   margin-top: 0px;

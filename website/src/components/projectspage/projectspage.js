@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import MainBody from "../bodymain/bodymain";
 import HeaderMain from "../headerforMain/headerMain";
-import style from "./projectspage.module.css"
+import style from "./projectspage.module.css";
+import { projects } from "../../projectList";
 
 function Projectspage() {
   const [width, setWidth] = useState("");
@@ -26,9 +28,12 @@ function Projectspage() {
   }, [height]);
 
   return (
-    <div style={{ width: `${width};`, height: `${height}` }}>
+    <div style={{ width: `${width}px`, height: `${height}px` }}>
       <div className={style.headerContainer}>
         <HeaderMain pageName={"Projects"} />
+      </div>
+      <div className={style.bodyContainer}>
+        <MainBody projects={projects}/>
       </div>
     </div>
   );

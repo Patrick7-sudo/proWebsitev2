@@ -68,7 +68,10 @@ function HeaderMain({pageName}){
                       </div>
                       {toggle ? (
                         <div className={style.optionsHolder}>
-                          <Link to="/aboutmepage">About Me</Link>
+                          
+                          <Link to="/aboutmepage">  
+                              About Me
+                          </Link>
 
                           <Link to="/projectspage">Projects</Link>
                         </div>

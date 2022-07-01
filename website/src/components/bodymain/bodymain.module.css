@@ -1,0 +1,67 @@
+:root {
+  --profilePicOuter-width: 46px;
+  --profilePicOuter-height: 46px;
+  --profilePicInner-width: 43px;
+  --profilePicInner-height: 43px;
+  --h1-font: 118.7px;
+  --h2-font: 83.9px;
+  --h3-font: 59.4px;
+  --h4-font: 42px;
+  --h5-font: 29.7px;
+  --h6-font: 16px;
+  --p-font: 21px;
+  --p-special: 15px;
+  
+
+  --font-clr: #5f6368;
+}
+
+.mainBodyContainer{
+    /* background-color: pink; */
+    width:90%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.resultNumberContainer{
+    /* background-color: aqua; */
+    height: 2%;
+    min-height: 30px;
+}
+.resultNumberContainer p{
+    color:var(--font-clr);
+    font-weight: 500;
+    margin-top:.5rem;
+}
+
+.contentContainer{
+    height: 95%;
+    /* background-color: white; */
+}
+.content{
+    /* background-color: red; */
+    margin-top:1rem;
+    margin-bottom:2.5rem;
+}
+.contentlinkShown{
+    /* background-color: yellow; */
+    margin:0px;
+    margin-bottom:.5rem;
+    color: #5f6368;
+}
+.content a{
+    color:#1a0dab;
+    text-decoration: none;
+    font-size: var(--h5-font);
+    text-transform: capitalize;
+    /* margin-top:.5rem; */
+    /* background-color: pink; */
+}
+.content a:hover{
+    text-decoration:underline;
+}
+.contentDesc{
+    font-size: var(--p-special);
+    margin-top:.3rem;
+    color: #5f6368;
+}
