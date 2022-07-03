@@ -3,7 +3,7 @@ export const background = [
     link: "#",
     status: "About Me",
     tagline: "About Me",
-    desc: "An inspiring Junior Full-stack software Engineer looking for new opportunities in the tech sector. Currently looking to work and learn within a positive and growth-minded team environment. ",
+    desc: "An inspiring Junior Full-stack Software Engineer looking for new opportunities in the tech sector. Currently looking to work and learn within a positive and growth-minded team environment. ",
   },
   {
     link: "#",
@@ -15,7 +15,7 @@ export const background = [
     link: "#",
     status: "Experience",
     tagline: "Experience",
-    desc: `The journey of a Bagmaker who transitions into becoming a Junior Full-stack Software Engineer.On the eve of Christmas, I decided to follow a tutorial on HTML and CSS on youtube video while waiting for the turkey to be fully-cooked. After 6 months of learning to code by myself and following tutorials on the internet, I got accepted to join a Bootcamp out of 500+ candidates nationwide. since this Bootcamp was fully remote, I learned how to communicate and work successfully as part of a self-direct Agile team. During the Bootcamp, I learned the fundamentals of Testing, Back-end technologies, and front-end technologies. While on the Bootcamp I also learned the fundamental of CyberSecurity in my spare time and learned UX/UI courses thought by professional UI/UX designers.
+    desc: `The journey of a bagmaker who transitions into becoming a Junior Full-stack Software Engineer.On the eve of Christmas, I decided to follow a video tutorial on HTML and CSS on YouTube, while waiting for the turkey to be fully-cooked. After 6 months of learning to code by myself and following tutorials on the internet, I got accepted to join the Bootcamp out of 500+ candidates nationwide. Since this Bootcamp was fully remote, I learnt how to communicate and work successfully as part of a self-directed Agile team. During the Bootcamp, I learnt the fundamentals of Testing, Back-end technologies, and front-end technologies. I was also learning the fundamentals of CyberSecurity in my spare time and attended virtual UX/UI courses taught by professional UI/UX designers.
     `,
   },
   {
@@ -46,12 +46,12 @@ export const background = [
     link: "https://www.youtube.com/watch?v=aFLFujQNX9s&t=366s",
     status: "Favourite Food",
     tagline: "Favourite Food",
-    desc: "I love fried chicken but to cook them yourselves can be messy and time-consuming, but Aaron and Claire help me to speed-up the process and avoiding the messy bit when comes to frying the chicken.",
+    desc: "I love fried chicken but to cook it yourself it can be messy and time-consuming. Aaron and Claire helped me to speed-up the process avoiding the messy bit when it comes to frying the chicken.",
   },
   {
     link: "https://whichisthebest.netlify.app/",
     status: "Which One?",
     tagline: "Which is the best Star Wars or Star Trek",
-    desc: "Lets find out which one is better and which one is just trying too hard?.",
+    desc: "Lets find out which one is better and which one is just trying too hard?",
   },
 ];
