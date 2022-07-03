@@ -43,16 +43,17 @@
     /* margin-bottom: 1rem; */
 }
 .content{
-    background-color: red;
+    /* background-color: red; */
     margin-top:1rem;
     margin-bottom:2.5rem;
     max-width:100%;
 }
 .contentlinkShown{
-    background-color: yellow;
+    /* background-color: yellow; */
     margin:0px;
     margin-bottom:.5rem;
     color: #5f6368;
+    overflow-wrap: break-word;
 }
 .content a{
     color:#1a0dab;
