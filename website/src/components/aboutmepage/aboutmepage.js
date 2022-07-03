@@ -28,7 +28,7 @@ useEffect(() => {
 }, [height]);
 
     return (
-      <div style={{ width: `${width};`, height: `${height}` }}>
+      <div style={{ width: `${width};`, height: `auto` }}>
         <div className={style.headerContainer}>
           <HeaderMain pageName={"About Me"} />
         </div>

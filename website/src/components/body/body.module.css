@@ -161,7 +161,7 @@
 }
 
 .techStackImage{
-    background-color: white;
+    background-color: transparent;
     max-width:600px;
     height:auto;
     display: flex;

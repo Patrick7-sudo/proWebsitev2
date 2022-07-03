@@ -28,7 +28,7 @@ function Projectspage() {
   }, [height]);
 
   return (
-    <div style={{ width: `${width}px`, height: `${height}px` }}>
+    <div style={{ width: `${width}px`, height: `auto` }}>
       <div className={style.headerContainer}>
         <HeaderMain pageName={"Projects"} />
       </div>

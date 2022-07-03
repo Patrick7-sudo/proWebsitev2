@@ -12,6 +12,12 @@ export const projects = [
     desc: "The application is a Full-Stack App created using React.js and style with module.css.While practicisng CI/CD and TDD, Back-end technology used for this application mySQL and Node.js ",
   },
   {
+    link: "https://www.figma.com/proto/5zZtjKOr7BtotH57yk7LSC/LAG?node-id=141%3A3362&scaling=scale-down&page-id=4%3A195&starting-point-node-id=141%3A3362&show-proto-sidebar=1",
+    status: "Completed",
+    tagline: "LAG aviation - UI/UX Global Aviation Monitoring App",
+    desc: "This is a UX/UI design practice using Figma. I created high-fidelity prototype using the application, so the user and the developers can have a better understand on how the website should function.",
+  },
+  {
     link: "https://xpeerience.netlify.app/",
     status: "Completed",
     tagline: "Xpeerience - Creating Connections through shared experiences",
