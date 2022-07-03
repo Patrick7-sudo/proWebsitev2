@@ -1,11 +1,11 @@
 .headerContainer{
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
     min-height: 100px;
     /* max-height: 15%;
     height: 15%; */
 }
 .bodyContainer{
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
     min-height: 500px;
     max-height: 85%;
     height: 85%;
