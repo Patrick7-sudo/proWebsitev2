@@ -11,5 +11,5 @@
     height: 85%;
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    flex-wrap: wrap;
 }
