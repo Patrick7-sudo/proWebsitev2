@@ -1,5 +1,11 @@
 export const projects = [
   {
+    link: "https://newshackathonniaxo.netlify.app/",
+    status: "Completed",
+    tagline:"Hackathon News - Your Trusted News App",
+    desc: "The application is a Front-end App created using React.js and styled with module.css, while practicisng CI/CD and TDD. It is a completed duplication of 4 hours Hackathon for job interview hosted by School of Code in partnership with Niaxo.",
+  },
+  {
     link: "https://weather838.netlify.app/",
     status: "Completed",
     tagline: "weather383 - Your Local weather App",
